@@ -1,0 +1,1 @@
+![CI](https://github.com/zubans/kino2/actions/workflows/ci.yml/badge.svg)

@@ -1,0 +1,18 @@
+Ivanov:
+  id: 1
+  name: Ivanov
+  email: ivanov@mail.ru
+  e_password: 3875ead2619f8057cd67367b98b907202dc7d9dd
+  salt: 123
+Petrov:
+  id: 2
+  name: Petrov
+  email: petrov@mail.ru
+  e_password: 234
+  salt: 234
+Sidorov:
+  id: 3
+  name: Sidorov
+  email: sidorov@mail.ru
+  e_password: 345
+  salt: 345

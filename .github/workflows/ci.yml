@@ -1,0 +1,26 @@
+name: CI
+
+on:
+  - push
+  - pull_request
+
+jobs:
+  test:
+    strategy:
+      fail-fast: false
+      matrix:
+        os: [ubuntu-latest]
+        ruby:
+          - '3.0.2'
+
+    runs-on: ${{ matrix.os }}
+    env:
+      LOCLISE_API_TOKEN: 123abc
+    steps:
+      - uses: actions/checkout@v2
+      - name: set up Ruby
+        uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: ${{ matrix.ruby }}
+          bundler-cache: true
+      - run: bundle exec rake spec
